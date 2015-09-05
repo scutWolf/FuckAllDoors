@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		793FEA821B9AD2C5003CD04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEA811B9AD2C5003CD04C /* AppDelegate.swift */; };
+		793FEA841B9AD2C5003CD04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEA831B9AD2C5003CD04C /* ViewController.swift */; };
+		793FEA871B9AD2C5003CD04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FEA851B9AD2C5003CD04C /* Main.storyboard */; };
+		793FEA891B9AD2C5003CD04C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793FEA881B9AD2C5003CD04C /* Images.xcassets */; };
+		793FEA8C1B9AD2C5003CD04C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FEA8A1B9AD2C5003CD04C /* LaunchScreen.xib */; };
+		793FEA981B9AD2C5003CD04C /* FuckTheDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEA971B9AD2C5003CD04C /* FuckTheDoorTests.swift */; };
+		793FEAA81B9AD302003CD04C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793FEAA71B9AD302003CD04C /* NotificationCenter.framework */; };
+		793FEAAD1B9AD302003CD04C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEAAC1B9AD302003CD04C /* TodayViewController.swift */; };
+		793FEAAF1B9AD302003CD04C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */; };
+		793FEAB21B9AD302003CD04C /* FuckDoorToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		793FEAB81B9AD924003CD04C /* TDHTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */; };
+		EEF6AFDE2F094B73BA134EAB /* libPods-FuckDoorToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		793FEA921B9AD2C5003CD04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793FEA741B9AD2C5003CD04C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793FEA7B1B9AD2C5003CD04C;
+			remoteInfo = FuckTheDoor;
+		};
+		793FEAB01B9AD302003CD04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793FEA741B9AD2C5003CD04C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793FEAA41B9AD302003CD04C;
+			remoteInfo = FuckDoorToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		793FEAB61B9AD302003CD04C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				793FEAB21B9AD302003CD04C /* FuckDoorToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckDoorToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckDoorToday/Pods-FuckDoorToday.debug.xcconfig"; sourceTree = "<group>"; };
+		6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckDoorToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuckDoorToday/Pods-FuckDoorToday.release.xcconfig"; sourceTree = "<group>"; };
+		793FEA7C1B9AD2C5003CD04C /* FuckTheDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckTheDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		793FEA801B9AD2C5003CD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793FEA811B9AD2C5003CD04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		793FEA831B9AD2C5003CD04C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		793FEA861B9AD2C5003CD04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		793FEA881B9AD2C5003CD04C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		793FEA8B1B9AD2C5003CD04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		793FEA911B9AD2C5003CD04C /* FuckTheDoorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckTheDoorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		793FEA961B9AD2C5003CD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793FEA971B9AD2C5003CD04C /* FuckTheDoorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckTheDoorTests.swift; sourceTree = "<group>"; };
+		793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FuckDoorToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		793FEAA71B9AD302003CD04C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		793FEAAB1B9AD302003CD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793FEAAC1B9AD302003CD04C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHTTPRequestOperation.swift; sourceTree = "<group>"; };
+		793FEAB91B9ADA54003CD04C /* FuckDoorToday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckDoorToday-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuckDoorToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		793FEA791B9AD2C5003CD04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEA8E1B9AD2C5003CD04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEAA21B9AD302003CD04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEAA81B9AD302003CD04C /* NotificationCenter.framework in Frameworks */,
+				EEF6AFDE2F094B73BA134EAB /* libPods-FuckDoorToday.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670F1F1FFE35352F45ED19D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */,
+				6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		793FEA731B9AD2C5003CD04C = {
+			isa = PBXGroup;
+			children = (
+				793FEA7E1B9AD2C5003CD04C /* FuckTheDoor */,
+				793FEA941B9AD2C5003CD04C /* FuckTheDoorTests */,
+				793FEAA91B9AD302003CD04C /* FuckDoorToday */,
+				793FEAA61B9AD302003CD04C /* Frameworks */,
+				793FEA7D1B9AD2C5003CD04C /* Products */,
+				670F1F1FFE35352F45ED19D3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		793FEA7D1B9AD2C5003CD04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				793FEA7C1B9AD2C5003CD04C /* FuckTheDoor.app */,
+				793FEA911B9AD2C5003CD04C /* FuckTheDoorTests.xctest */,
+				793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		793FEA7E1B9AD2C5003CD04C /* FuckTheDoor */ = {
+			isa = PBXGroup;
+			children = (
+				793FEA811B9AD2C5003CD04C /* AppDelegate.swift */,
+				793FEA831B9AD2C5003CD04C /* ViewController.swift */,
+				793FEA851B9AD2C5003CD04C /* Main.storyboard */,
+				793FEA881B9AD2C5003CD04C /* Images.xcassets */,
+				793FEA8A1B9AD2C5003CD04C /* LaunchScreen.xib */,
+				793FEA7F1B9AD2C5003CD04C /* Supporting Files */,
+			);
+			path = FuckTheDoor;
+			sourceTree = "<group>";
+		};
+		793FEA7F1B9AD2C5003CD04C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				793FEA801B9AD2C5003CD04C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		793FEA941B9AD2C5003CD04C /* FuckTheDoorTests */ = {
+			isa = PBXGroup;
+			children = (
+				793FEA971B9AD2C5003CD04C /* FuckTheDoorTests.swift */,
+				793FEA951B9AD2C5003CD04C /* Supporting Files */,
+			);
+			path = FuckTheDoorTests;
+			sourceTree = "<group>";
+		};
+		793FEA951B9AD2C5003CD04C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				793FEA961B9AD2C5003CD04C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		793FEAA61B9AD302003CD04C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				793FEAA71B9AD302003CD04C /* NotificationCenter.framework */,
+				FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		793FEAA91B9AD302003CD04C /* FuckDoorToday */ = {
+			isa = PBXGroup;
+			children = (
+				793FEAB91B9ADA54003CD04C /* FuckDoorToday-Bridging-Header.h */,
+				793FEAAC1B9AD302003CD04C /* TodayViewController.swift */,
+				793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */,
+				793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */,
+				793FEAAA1B9AD302003CD04C /* Supporting Files */,
+			);
+			path = FuckDoorToday;
+			sourceTree = "<group>";
+		};
+		793FEAAA1B9AD302003CD04C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				793FEAAB1B9AD302003CD04C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		793FEA7B1B9AD2C5003CD04C /* FuckTheDoor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793FEA9B1B9AD2C5003CD04C /* Build configuration list for PBXNativeTarget "FuckTheDoor" */;
+			buildPhases = (
+				793FEA781B9AD2C5003CD04C /* Sources */,
+				793FEA791B9AD2C5003CD04C /* Frameworks */,
+				793FEA7A1B9AD2C5003CD04C /* Resources */,
+				793FEAB61B9AD302003CD04C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793FEAB11B9AD302003CD04C /* PBXTargetDependency */,
+			);
+			name = FuckTheDoor;
+			productName = FuckTheDoor;
+			productReference = 793FEA7C1B9AD2C5003CD04C /* FuckTheDoor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		793FEA901B9AD2C5003CD04C /* FuckTheDoorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793FEA9E1B9AD2C5003CD04C /* Build configuration list for PBXNativeTarget "FuckTheDoorTests" */;
+			buildPhases = (
+				793FEA8D1B9AD2C5003CD04C /* Sources */,
+				793FEA8E1B9AD2C5003CD04C /* Frameworks */,
+				793FEA8F1B9AD2C5003CD04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793FEA931B9AD2C5003CD04C /* PBXTargetDependency */,
+			);
+			name = FuckTheDoorTests;
+			productName = FuckTheDoorTests;
+			productReference = 793FEA911B9AD2C5003CD04C /* FuckTheDoorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		793FEAA41B9AD302003CD04C /* FuckDoorToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793FEAB31B9AD302003CD04C /* Build configuration list for PBXNativeTarget "FuckDoorToday" */;
+			buildPhases = (
+				D56C10DF650AA0F5AF95CF19 /* Check Pods Manifest.lock */,
+				793FEAA11B9AD302003CD04C /* Sources */,
+				793FEAA21B9AD302003CD04C /* Frameworks */,
+				793FEAA31B9AD302003CD04C /* Resources */,
+				3D76D4ABD219B5ED4D0DBBCB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuckDoorToday;
+			productName = FuckDoorToday;
+			productReference = 793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		793FEA741B9AD2C5003CD04C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Wolf;
+				TargetAttributes = {
+					793FEA7B1B9AD2C5003CD04C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					793FEA901B9AD2C5003CD04C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 793FEA7B1B9AD2C5003CD04C;
+					};
+					793FEAA41B9AD302003CD04C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 793FEA771B9AD2C5003CD04C /* Build configuration list for PBXProject "FuckTheDoor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 793FEA731B9AD2C5003CD04C;
+			productRefGroup = 793FEA7D1B9AD2C5003CD04C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				793FEA7B1B9AD2C5003CD04C /* FuckTheDoor */,
+				793FEA901B9AD2C5003CD04C /* FuckTheDoorTests */,
+				793FEAA41B9AD302003CD04C /* FuckDoorToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		793FEA7A1B9AD2C5003CD04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEA871B9AD2C5003CD04C /* Main.storyboard in Resources */,
+				793FEA8C1B9AD2C5003CD04C /* LaunchScreen.xib in Resources */,
+				793FEA891B9AD2C5003CD04C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEA8F1B9AD2C5003CD04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEAA31B9AD302003CD04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEAAF1B9AD302003CD04C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D76D4ABD219B5ED4D0DBBCB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuckDoorToday/Pods-FuckDoorToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56C10DF650AA0F5AF95CF19 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		793FEA781B9AD2C5003CD04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEA841B9AD2C5003CD04C /* ViewController.swift in Sources */,
+				793FEA821B9AD2C5003CD04C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEA8D1B9AD2C5003CD04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEA981B9AD2C5003CD04C /* FuckTheDoorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793FEAA11B9AD302003CD04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793FEAAD1B9AD302003CD04C /* TodayViewController.swift in Sources */,
+				793FEAB81B9AD924003CD04C /* TDHTTPRequestOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		793FEA931B9AD2C5003CD04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793FEA7B1B9AD2C5003CD04C /* FuckTheDoor */;
+			targetProxy = 793FEA921B9AD2C5003CD04C /* PBXContainerItemProxy */;
+		};
+		793FEAB11B9AD302003CD04C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793FEAA41B9AD302003CD04C /* FuckDoorToday */;
+			targetProxy = 793FEAB01B9AD302003CD04C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		793FEA851B9AD2C5003CD04C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793FEA861B9AD2C5003CD04C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		793FEA8A1B9AD2C5003CD04C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793FEA8B1B9AD2C5003CD04C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		793FEA991B9AD2C5003CD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		793FEA9A1B9AD2C5003CD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		793FEA9C1B9AD2C5003CD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FuckTheDoor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		793FEA9D1B9AD2C5003CD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FuckTheDoor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		793FEA9F1B9AD2C5003CD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FuckTheDoorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckTheDoor.app/FuckTheDoor";
+			};
+			name = Debug;
+		};
+		793FEAA01B9AD2C5003CD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FuckTheDoorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckTheDoor.app/FuckTheDoor";
+			};
+			name = Release;
+		};
+		793FEAB41B9AD302003CD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FuckDoorToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckDoorToday/FuckDoorToday-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		793FEAB51B9AD302003CD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FuckDoorToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckDoorToday/FuckDoorToday-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		793FEA771B9AD2C5003CD04C /* Build configuration list for PBXProject "FuckTheDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793FEA991B9AD2C5003CD04C /* Debug */,
+				793FEA9A1B9AD2C5003CD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793FEA9B1B9AD2C5003CD04C /* Build configuration list for PBXNativeTarget "FuckTheDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793FEA9C1B9AD2C5003CD04C /* Debug */,
+				793FEA9D1B9AD2C5003CD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793FEA9E1B9AD2C5003CD04C /* Build configuration list for PBXNativeTarget "FuckTheDoorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793FEA9F1B9AD2C5003CD04C /* Debug */,
+				793FEAA01B9AD2C5003CD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793FEAB31B9AD302003CD04C /* Build configuration list for PBXNativeTarget "FuckDoorToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793FEAB41B9AD302003CD04C /* Debug */,
+				793FEAB51B9AD302003CD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 793FEA741B9AD2C5003CD04C /* Project object */;
+}
