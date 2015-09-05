@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A409BFB2-D7FC-45FC-8533-F5C6C5394680</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FuckTheDoor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12AB8BE0BA5701B36839E2AD9FCAA42327D6DD01</key>
+		<string>github.com:scutWolf/FuckAllDoors.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FuckTheDoor.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12AB8BE0BA5701B36839E2AD9FCAA42327D6DD01</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:scutWolf/FuckAllDoors.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12AB8BE0BA5701B36839E2AD9FCAA42327D6DD01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12AB8BE0BA5701B36839E2AD9FCAA42327D6DD01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FuckTheDoor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

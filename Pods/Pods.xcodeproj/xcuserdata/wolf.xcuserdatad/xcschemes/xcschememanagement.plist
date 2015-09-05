@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FuckTheDoor-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FuckTheDoor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B491173836254D34FBFF6E3</key>
+		<key>297151A449B3D9541F2F411A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1CA4D9999C2805CB98BBCD61</key>
+		<key>A974FE8E889C2583F155D755</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1C67CD57D6E4D2AE4BF810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE0A4ABD7C22A957A4DBF2C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

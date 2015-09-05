@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5386F4C87E878CDF8A0A1E69 /* libPods-FuckTheDoor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E926EE5679E7D16330AA804D /* libPods-FuckTheDoor.a */; };
 		793FEA821B9AD2C5003CD04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEA811B9AD2C5003CD04C /* AppDelegate.swift */; };
 		793FEA841B9AD2C5003CD04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEA831B9AD2C5003CD04C /* ViewController.swift */; };
 		793FEA871B9AD2C5003CD04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FEA851B9AD2C5003CD04C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 		793FEAAF1B9AD302003CD04C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */; };
 		793FEAB21B9AD302003CD04C /* FuckDoorToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		793FEAB81B9AD924003CD04C /* TDHTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */; };
+		799F7D921B9AFF8900DC1476 /* TDHTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */; };
 		EEF6AFDE2F094B73BA134EAB /* libPods-FuckDoorToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckDoorToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckDoorToday/Pods-FuckDoorToday.debug.xcconfig"; sourceTree = "<group>"; };
+		49721084FC6AC32DFEA400DC /* Pods-FuckTheDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckTheDoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckTheDoor/Pods-FuckTheDoor.debug.xcconfig"; sourceTree = "<group>"; };
 		6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckDoorToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuckDoorToday/Pods-FuckDoorToday.release.xcconfig"; sourceTree = "<group>"; };
 		793FEA7C1B9AD2C5003CD04C /* FuckTheDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckTheDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793FEA801B9AD2C5003CD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHTTPRequestOperation.swift; sourceTree = "<group>"; };
 		793FEAB91B9ADA54003CD04C /* FuckDoorToday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckDoorToday-Bridging-Header.h"; sourceTree = "<group>"; };
+		799F7D881B9AFEF000DC1476 /* FuckTheDoor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckTheDoor-Bridging-Header.h"; sourceTree = "<group>"; };
+		799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHTTPRequestOperation.swift; sourceTree = "<group>"; };
+		DBB6A558CB3532802B4568D7 /* Pods-FuckTheDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckTheDoor.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuckTheDoor/Pods-FuckTheDoor.release.xcconfig"; sourceTree = "<group>"; };
+		E926EE5679E7D16330AA804D /* libPods-FuckTheDoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuckTheDoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuckDoorToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5386F4C87E878CDF8A0A1E69 /* libPods-FuckTheDoor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,8 @@
 			children = (
 				08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */,
 				6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */,
+				49721084FC6AC32DFEA400DC /* Pods-FuckTheDoor.debug.xcconfig */,
+				DBB6A558CB3532802B4568D7 /* Pods-FuckTheDoor.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -136,7 +146,9 @@
 		793FEA7E1B9AD2C5003CD04C /* FuckTheDoor */ = {
 			isa = PBXGroup;
 			children = (
+				799F7D881B9AFEF000DC1476 /* FuckTheDoor-Bridging-Header.h */,
 				793FEA811B9AD2C5003CD04C /* AppDelegate.swift */,
+				799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */,
 				793FEA831B9AD2C5003CD04C /* ViewController.swift */,
 				793FEA851B9AD2C5003CD04C /* Main.storyboard */,
 				793FEA881B9AD2C5003CD04C /* Images.xcassets */,
@@ -176,6 +188,7 @@
 			children = (
 				793FEAA71B9AD302003CD04C /* NotificationCenter.framework */,
 				FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */,
+				E926EE5679E7D16330AA804D /* libPods-FuckTheDoor.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,10 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793FEA9B1B9AD2C5003CD04C /* Build configuration list for PBXNativeTarget "FuckTheDoor" */;
 			buildPhases = (
+				2F4B91B824F9938CB583A018 /* Check Pods Manifest.lock */,
 				793FEA781B9AD2C5003CD04C /* Sources */,
 				793FEA791B9AD2C5003CD04C /* Frameworks */,
 				793FEA7A1B9AD2C5003CD04C /* Resources */,
 				793FEAB61B9AD302003CD04C /* Embed App Extensions */,
+				1264C63227E974877C33A011 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +344,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1264C63227E974877C33A011 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuckTheDoor/Pods-FuckTheDoor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F4B91B824F9938CB583A018 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		3D76D4ABD219B5ED4D0DBBCB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				793FEA841B9AD2C5003CD04C /* ViewController.swift in Sources */,
+				799F7D921B9AFF8900DC1476 /* TDHTTPRequestOperation.swift in Sources */,
 				793FEA821B9AD2C5003CD04C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,21 +552,28 @@
 		};
 		793FEA9C1B9AD2C5003CD04C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49721084FC6AC32DFEA400DC /* Pods-FuckTheDoor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuckTheDoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckTheDoor/FuckTheDoor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		793FEA9D1B9AD2C5003CD04C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB6A558CB3532802B4568D7 /* Pods-FuckTheDoor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuckTheDoor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckTheDoor/FuckTheDoor-Bridging-Header.h";
 			};
 			name = Release;
 		};

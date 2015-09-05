@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -14,12 +13,15 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqY-9r-1v5">
-                                <rect key="frame" x="16" y="13" width="288" height="34"/>
+                                <rect key="frame" x="16" y="83" width="288" height="34"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1at-us-3Xf"/>
+                                </constraints>
                                 <state key="normal" title="全他妈开">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,12 +36,115 @@
                                     <action selector="fuckAllTheDoor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="n8y-Zx-duR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aql-mS-L5h">
+                                <rect key="frame" x="16" y="45" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vJO-tr-ZwU"/>
+                                </constraints>
+                                <state key="normal" title="正门">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openFrontDoor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="3pa-kv-oRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-uN-Obg">
+                                <rect key="frame" x="90" y="45" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AiX-NW-xlW"/>
+                                </constraints>
+                                <state key="normal" title="后门">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openBackDoor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="z8c-Qt-eJs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-c3-QQC">
+                                <rect key="frame" x="164" y="45" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3K0-TF-Mv0"/>
+                                </constraints>
+                                <state key="normal" title="大堂">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openFirstFloor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="HN0-yq-SRs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-E3-ugm">
+                                <rect key="frame" x="238" y="45" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iXp-mU-ttf"/>
+                                </constraints>
+                                <state key="normal" title="负一">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openUndergroundFloor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hNN-V7-Xci"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="并没有开门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUy-LX-n7L">
+                                <rect key="frame" x="16" y="8" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Hn7-QH-XdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="iqY-9r-1v5" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="AOP-R8-NIJ"/>
+                            <constraint firstItem="VYA-uN-Obg" firstAttribute="centerY" secondItem="aql-mS-L5h" secondAttribute="centerY" id="0Hd-WT-uAr"/>
+                            <constraint firstItem="iqY-9r-1v5" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="AOP-R8-NIJ"/>
+                            <constraint firstItem="VYA-uN-Obg" firstAttribute="centerY" secondItem="tWf-c3-QQC" secondAttribute="centerY" id="BIY-nb-zqC"/>
+                            <constraint firstItem="XW6-E3-ugm" firstAttribute="width" secondItem="tWf-c3-QQC" secondAttribute="width" id="Kdo-UB-IId"/>
+                            <constraint firstItem="VYA-uN-Obg" firstAttribute="leading" secondItem="aql-mS-L5h" secondAttribute="trailing" constant="8" id="Lb1-3E-gu6"/>
+                            <constraint firstItem="XW6-E3-ugm" firstAttribute="centerY" secondItem="tWf-c3-QQC" secondAttribute="centerY" id="MB6-7A-eQk"/>
+                            <constraint firstItem="XW6-E3-ugm" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailing" constant="-16" id="OS3-kl-IMg"/>
+                            <constraint firstItem="VYA-uN-Obg" firstAttribute="width" secondItem="tWf-c3-QQC" secondAttribute="width" id="XkO-x8-K3x"/>
+                            <constraint firstItem="TUy-LX-n7L" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="a9E-ef-EA0"/>
+                            <constraint firstItem="VYA-uN-Obg" firstAttribute="width" secondItem="aql-mS-L5h" secondAttribute="width" id="ajO-KJ-wqZ"/>
                             <constraint firstItem="iqY-9r-1v5" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailing" constant="-16" id="ax8-cD-e1B"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="iqY-9r-1v5" secondAttribute="bottom" constant="13" id="blz-jk-8Re"/>
-                            <constraint firstItem="iqY-9r-1v5" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="13" id="o4J-7c-CNC"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="iqY-9r-1v5" secondAttribute="bottom" constant="8" id="blz-jk-8Re"/>
+                            <constraint firstItem="iqY-9r-1v5" firstAttribute="top" secondItem="aql-mS-L5h" secondAttribute="bottom" constant="8" id="dJ0-iF-pUh"/>
+                            <constraint firstItem="TUy-LX-n7L" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailing" constant="-16" id="n9E-ck-fIG"/>
+                            <constraint firstItem="aql-mS-L5h" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="tGV-K3-Vj9"/>
+                            <constraint firstItem="tWf-c3-QQC" firstAttribute="leading" secondItem="VYA-uN-Obg" secondAttribute="trailing" constant="8" id="tpV-SS-tXd"/>
+                            <constraint firstItem="TUy-LX-n7L" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="vAR-yR-wzy"/>
+                            <constraint firstItem="XW6-E3-ugm" firstAttribute="leading" secondItem="tWf-c3-QQC" secondAttribute="trailing" constant="8" id="vGD-2L-QVb"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -47,11 +152,14 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="60"/>
+                    <size key="freeformSize" width="320" height="125"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="TUy-LX-n7L" id="dfa-OG-EHB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="285"/>
+            <point key="canvasLocation" x="497" y="198.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

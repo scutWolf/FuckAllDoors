@@ -3,6 +3,9 @@
 
 target 'FuckTheDoor' do
 
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+
 end
 
 target 'FuckTheDoorTests' do

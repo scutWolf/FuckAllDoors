@@ -1,25 +1,153 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JSp-es-0ga">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--开门!-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FuckTheDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-rJ-Z6V">
+                                <rect key="frame" x="8" y="207" width="304" height="154"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-1B-BKX">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="35"/>
+                                        <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="bqP-Y0-Inr"/>
+                                        </constraints>
+                                        <state key="normal" title="前门">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openFrontDoor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IeF-gr-EvQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-6S-yf7">
+                                        <rect key="frame" x="0.0" y="81" width="304" height="30"/>
+                                        <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="大堂">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openFirstFloor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ohe-Z9-qSB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOS-bW-eC6">
+                                        <rect key="frame" x="0.0" y="119" width="304" height="35"/>
+                                        <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="99m-Sn-bu6"/>
+                                        </constraints>
+                                        <state key="normal" title="负一">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openUndergroundFloor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uxc-6f-chv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-iM-kfK">
+                                        <rect key="frame" x="0.0" y="43" width="304" height="30"/>
+                                        <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="后门">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openBackDoor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q3i-H9-A2G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="t6X-6S-yf7" firstAttribute="leading" secondItem="F5U-rJ-Z6V" secondAttribute="leading" id="3d6-8e-epT"/>
+                                    <constraint firstAttribute="trailing" secondItem="eUZ-1B-BKX" secondAttribute="trailing" id="CN8-nK-Gct"/>
+                                    <constraint firstItem="eUZ-1B-BKX" firstAttribute="top" secondItem="F5U-rJ-Z6V" secondAttribute="top" id="Ckc-EN-fjt"/>
+                                    <constraint firstAttribute="trailing" secondItem="t6X-6S-yf7" secondAttribute="trailing" id="FAk-F8-CWh"/>
+                                    <constraint firstItem="IRV-iM-kfK" firstAttribute="top" secondItem="eUZ-1B-BKX" secondAttribute="bottom" constant="8" id="Gyn-W4-tIQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="hOS-bW-eC6" secondAttribute="trailing" id="IQT-Tq-KsD"/>
+                                    <constraint firstItem="t6X-6S-yf7" firstAttribute="top" secondItem="IRV-iM-kfK" secondAttribute="bottom" constant="8" id="PQw-eJ-Z7J"/>
+                                    <constraint firstItem="hOS-bW-eC6" firstAttribute="leading" secondItem="F5U-rJ-Z6V" secondAttribute="leading" id="k5l-Tv-EC0"/>
+                                    <constraint firstItem="eUZ-1B-BKX" firstAttribute="leading" secondItem="F5U-rJ-Z6V" secondAttribute="leading" id="mho-bh-GyP"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOS-bW-eC6" secondAttribute="bottom" id="qXz-UJ-fkh"/>
+                                    <constraint firstItem="hOS-bW-eC6" firstAttribute="top" secondItem="t6X-6S-yf7" secondAttribute="bottom" constant="8" id="sLo-IV-Z0x"/>
+                                    <constraint firstItem="IRV-iM-kfK" firstAttribute="leading" secondItem="F5U-rJ-Z6V" secondAttribute="leading" id="tml-eU-Kau"/>
+                                    <constraint firstAttribute="trailing" secondItem="IRV-iM-kfK" secondAttribute="trailing" id="wiV-zz-HAu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F5U-rJ-Z6V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="24f-Qz-Jy1"/>
+                            <constraint firstItem="F5U-rJ-Z6V" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailing" constant="-8" id="9Ak-jt-HjT"/>
+                            <constraint firstAttribute="centerY" secondItem="F5U-rJ-Z6V" secondAttribute="centerY" id="aEf-Ds-UdB"/>
+                            <constraint firstAttribute="centerX" secondItem="F5U-rJ-Z6V" secondAttribute="centerX" id="dMp-em-XkV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="开门!" id="Zp7-Pg-LyL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="854" y="463"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W5i-a6-ITp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JSp-es-0ga" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="drJ-GP-nBX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qts-YD-mtw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJ3-xl-EWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="463"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
