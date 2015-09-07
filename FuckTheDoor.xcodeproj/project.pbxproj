@@ -292,6 +292,7 @@
 					};
 					793FEAA41B9AD302003CD04C = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = L87M5J8U27;
 					};
 				};
 			};
@@ -616,6 +617,8 @@
 			baseConfigurationReference = 08FC740DDC4D2A31D92BF712 /* Pods-FuckDoorToday.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -623,6 +626,7 @@
 				INFOPLIST_FILE = FuckDoorToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FuckDoorToday/FuckDoorToday-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -634,9 +638,12 @@
 			baseConfigurationReference = 6DEE3E846F45FEEA04482FB9 /* Pods-FuckDoorToday.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FuckDoorToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FuckDoorToday/FuckDoorToday-Bridging-Header.h";
 			};

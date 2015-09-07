@@ -9,10 +9,55 @@
 import UIKit
 import NotificationCenter
 
+enum Door{
+
+    case Front
+    case Back
+    case Lobby
+    case Underground
+    
+    var doorID:String{
+        get {
+            switch self{
+            case .Front:
+                return "01"
+            case .Back:
+                return "02"
+            case .Lobby:
+                return "0550"
+            case .Underground:
+                return "0551"
+            }
+        }
+    }
+    
+    var doorDescription:String{
+        get {
+            switch self{
+            case .Front:
+                return "正门"
+            case .Back:
+                return "后门"
+            case .Lobby:
+                return "大堂"
+            case .Underground:
+                return "负一"
+            }
+        }
+    
+    }
+}
+
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     var token:String?
     @IBOutlet var statusLabel: UILabel!
+    
+    @IBOutlet var frontDoorButton: UIButton!
+    @IBOutlet var backDoorButton: UIButton!
+    @IBOutlet var lobbyButton: UIButton!
+    @IBOutlet var undergroundButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,28 +73,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBAction func fuckAllTheDoor(sender: AnyObject) {
         
-//        println("tap w")
-//        
-//        TDHTTPRequestOperation.postForJSON("http://www.uhomecp.com/userInfo/login.json", parameters: ["tel":"18520200580","version":"4.0","password":"38213521"], success: { (operation, responseObject) -> () in
-//            
-//            if let jsonDict = responseObject as? NSDictionary{
-//                
-//                println(jsonDict)
-//                
-//                if let data = jsonDict["data"] as? NSDictionary{
-//                    if let token = data["accessToken"] as? String {
-//                        println("token:"+token)
-//                        self.fuckAll(token)
-//                    }
-//                    
-//                }
-//                
-//            }
-//            
-//        }) { (operation, error) -> () in
-//            println("error:\(error.description)")
-//        }
-////
         if (self.token != nil){
             self.fuckAll(self.token!)
         }
@@ -92,47 +115,34 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         //
     }
     
-    @IBAction func openFrontDoor(sender: AnyObject) {
-        if (self.token != nil){
-            self.fuckDoor("01", token: self.token!)
-        }
-        else{
-            self.login({ () -> () in
-                self.fuckDoor("01", token: self.token!)
-            })
-        }
-    }
     
-    @IBAction func openBackDoor(sender: AnyObject) {
-        if (self.token != nil){
-            self.fuckDoor("02", token: self.token!)
-        }
-        else{
-            self.login({ () -> () in
-                self.fuckDoor("02", token: self.token!)
-            })
-        }
-    }
     
-    @IBAction func openFirstFloor(sender: AnyObject) {
-        if (self.token != nil){
-            self.fuckDoor("0550", token: self.token!)
+    @IBAction func openDoorButtonPressed(sender: UIButton) {
+        
+        var door:Door?
+        
+        switch sender{
+        case self.frontDoorButton:
+            door = Door.Front
+        case self.backDoorButton:
+            door = Door.Back
+        case self.lobbyButton:
+            door = Door.Lobby
+        case self.undergroundButton:
+            door = Door.Underground
+        default:
+            door = nil
         }
-        else{
-            self.login({ () -> () in
-                self.fuckDoor("0550", token: self.token!)
-            })
-        }
-    }
-    
-    @IBAction func openUndergroundFloor(sender: AnyObject) {
-        if (self.token != nil){
-            self.fuckDoor("0551", token: token!)
-        }
-        else{
-            self.login({ () -> () in
-                self.fuckDoor("0551", token: self.token!)
-            })
+        
+        if (door != nil){
+            if (self.token != nil){
+                self.fuckDoor(door!, token: token!)
+            }
+            else{
+                self.login({ () -> () in
+                    self.fuckDoor(door!, token: self.token!)
+                })
+            }
         }
     }
     
@@ -140,16 +150,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func fuckAll(token:String){
         
         
-        self.fuckDoor("01", token: token)
-        self.fuckDoor("02", token: token)
-        self.fuckDoor("0551", token: token)
-        self.fuckDoor("0550", token: token)
-
+        self.fuckDoor(Door.Front, token: token)
+        self.fuckDoor(Door.Back, token: token)
+        self.fuckDoor(Door.Lobby, token: token)
+        self.fuckDoor(Door.Underground, token: token)        
     
     }
     
     
-    func fuckDoor(door:String,token:String){
+    func fuckDoor(door:Door,token:String){
         
         var manager = AFHTTPRequestOperationManager()
         var serializer = AFJSONResponseSerializer()
@@ -158,33 +167,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         manager.requestSerializer=AFHTTPRequestSerializer();
         manager.requestSerializer.setValue(token, forHTTPHeaderField: "token")
 
+        var doorID = door.doorID
+        var doorDescription = door.doorDescription
         
-        
-        manager.POST("http://www.uhomecp.com/door/openDoor.json?", parameters: ["communityId":"385","doorIdStr":door], success: { (operation, responseObject) -> Void in
+        manager.POST("http://www.uhomecp.com/door/openDoor.json?", parameters: ["communityId":"385","doorIdStr":doorID], success: { (operation, responseObject) -> Void in
             
-            println("open \(door) successfully")
+            println("open \(doorDescription) successfully")
 
-            var doorDescription:String
-            
-            switch door{
-            case "01":
-                doorDescription = "正门"
-            case "02":
-                doorDescription = "后门"
-            case "0550":
-                doorDescription = "大堂"
-            case "0551":
-                doorDescription = "负一"
-            default:
-                doorDescription = ""
-            }
-            
             
             self.statusLabel.text = "打开\(doorDescription)大门成功"
             
             }) { (operation:AFHTTPRequestOperation, error:NSError) -> Void in
                 
-                println("open \(door) failurefully")
+                println("open \(door.doorDescription) failurefully")
                 self.statusLabel.text = "打开大门失败,尝试重新登录"
     
                 self.login({ () -> () in

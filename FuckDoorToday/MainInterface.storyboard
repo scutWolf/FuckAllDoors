@@ -53,27 +53,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="openFrontDoor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="3pa-kv-oRk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-uN-Obg">
-                                <rect key="frame" x="90" y="45" width="66" height="30"/>
-                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AiX-NW-xlW"/>
-                                </constraints>
-                                <state key="normal" title="后门">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="openBackDoor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="z8c-Qt-eJs"/>
+                                    <action selector="openDoorButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="z07-ro-hyX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-c3-QQC">
@@ -93,7 +73,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="openFirstFloor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="HN0-yq-SRs"/>
+                                    <action selector="openDoorButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="MIT-UC-1O8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW6-E3-ugm">
@@ -113,7 +93,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="openUndergroundFloor:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="hNN-V7-Xci"/>
+                                    <action selector="openDoorButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="bJp-xQ-IC5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="并没有开门" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUy-LX-n7L">
@@ -125,6 +105,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-uN-Obg">
+                                <rect key="frame" x="90" y="45" width="66" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.63137254899999995" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AiX-NW-xlW"/>
+                                </constraints>
+                                <state key="normal" title="后门">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openDoorButtonPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Wcn-uM-ys9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="VYA-uN-Obg" firstAttribute="centerY" secondItem="aql-mS-L5h" secondAttribute="centerY" id="0Hd-WT-uAr"/>
@@ -154,7 +154,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="125"/>
                     <connections>
+                        <outlet property="backDoorButton" destination="VYA-uN-Obg" id="6Up-Lr-8t5"/>
+                        <outlet property="frontDoorButton" destination="aql-mS-L5h" id="qPe-VH-HYe"/>
+                        <outlet property="lobbyButton" destination="tWf-c3-QQC" id="t6X-z1-Ln7"/>
                         <outlet property="statusLabel" destination="TUy-LX-n7L" id="dfa-OG-EHB"/>
+                        <outlet property="undergroundButton" destination="XW6-E3-ugm" id="Wnu-oY-dcr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
