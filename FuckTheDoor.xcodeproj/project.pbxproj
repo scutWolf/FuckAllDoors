@@ -280,6 +280,8 @@
 		793FEA741B9AD2C5003CD04C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Wolf;
 				TargetAttributes = {

@@ -37,11 +37,11 @@ class ViewController: UIViewController {
             
             if let jsonDict = responseObject as? NSDictionary{
                 
-                println(jsonDict)
+                print(jsonDict)
                 
                 if let data = jsonDict["data"] as? NSDictionary{
                     if let token = data["accessToken"] as? String {
-                        println("token:"+token)
+                        print("token:"+token)
                         self.token = token
                         
                     }
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             }
             
             }) { (operation, error) -> () in
-                println("error:\(error.description)")
+                print("error:\(error.description)")
         }
         //
     }
@@ -83,8 +83,8 @@ class ViewController: UIViewController {
     
     func fuckDoor(door:String,token:String){
         
-        var manager = AFHTTPRequestOperationManager()
-        var serializer = AFJSONResponseSerializer()
+        let manager = AFHTTPRequestOperationManager()
+        let serializer = AFJSONResponseSerializer()
         serializer.removesKeysWithNullValues = true
         manager.responseSerializer = serializer;
         manager.requestSerializer=AFHTTPRequestSerializer();
@@ -94,11 +94,11 @@ class ViewController: UIViewController {
         
         manager.POST("http://www.uhomecp.com/door/openDoor.json?", parameters: ["communityId":"385","doorIdStr":door], success: { (operation, responseObject) -> Void in
             
-            println("open \(door) successfully")
+            print("open \(door) successfully")
             
             }) { (operation:AFHTTPRequestOperation, error:NSError) -> Void in
                 
-                println("open \(door) failurefully")
+                print("open \(door) failurefully")
                 
         }
         

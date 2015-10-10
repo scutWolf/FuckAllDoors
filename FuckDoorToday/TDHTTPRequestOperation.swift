@@ -13,13 +13,13 @@ class TDHTTPRequestOperation: NSObject {
     class func postForJSON(url:String,parameters:AnyObject?,success:(operation: AFHTTPRequestOperation,responseObject: AnyObject!)->(),failure:(operation:AFHTTPRequestOperation, error:NSError)->())->(AFHTTPRequestOperation)
     {
     
-        var manager = AFHTTPRequestOperationManager()
-        var serializer = AFJSONResponseSerializer()
+        let manager = AFHTTPRequestOperationManager()
+        let serializer = AFJSONResponseSerializer()
         serializer.removesKeysWithNullValues = true
         manager.responseSerializer = serializer;
         manager.requestSerializer=AFHTTPRequestSerializer();
         
-        var post:AFHTTPRequestOperation = manager.POST(url, parameters: parameters, success: success , failure: failure)!;
+        let post:AFHTTPRequestOperation = manager.POST(url, parameters: parameters, success: success , failure: failure)!;
         
         return post
         

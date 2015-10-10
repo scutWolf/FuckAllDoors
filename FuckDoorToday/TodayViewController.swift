@@ -93,11 +93,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
             if let jsonDict = responseObject as? NSDictionary{
                 
-                println(jsonDict)
+                print(jsonDict)
                 
                 if let data = jsonDict["data"] as? NSDictionary{
                     if let token = data["accessToken"] as? String {
-                        println("token:"+token)
+                        print("token:"+token)
                         self.token = token
                         self.statusLabel.text = "登录成功"
 
@@ -109,7 +109,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             
             }) { (operation, error) -> () in
-                println("error:\(error.description)")
+                print("error:\(error.description)")
                 self.statusLabel.text = "登录失败:\(error.description)"
         }
         //
@@ -160,26 +160,26 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func fuckDoor(door:Door,token:String){
         
-        var manager = AFHTTPRequestOperationManager()
-        var serializer = AFJSONResponseSerializer()
+        let manager = AFHTTPRequestOperationManager()
+        let serializer = AFJSONResponseSerializer()
         serializer.removesKeysWithNullValues = true
         manager.responseSerializer = serializer;
         manager.requestSerializer=AFHTTPRequestSerializer();
         manager.requestSerializer.setValue(token, forHTTPHeaderField: "token")
 
-        var doorID = door.doorID
-        var doorDescription = door.doorDescription
+        let doorID = door.doorID
+        let doorDescription = door.doorDescription
         
         manager.POST("http://www.uhomecp.com/door/openDoor.json?", parameters: ["communityId":"385","doorIdStr":doorID], success: { (operation, responseObject) -> Void in
             
-            println("open \(doorDescription) successfully")
+            print("open \(doorDescription) successfully")
 
             
             self.statusLabel.text = "打开\(doorDescription)大门成功"
             
             }) { (operation:AFHTTPRequestOperation, error:NSError) -> Void in
                 
-                println("open \(door.doorDescription) failurefully")
+                print("open \(door.doorDescription) failurefully")
                 self.statusLabel.text = "打开大门失败,尝试重新登录"
     
                 self.login({ () -> () in
@@ -192,7 +192,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
 
         // If an error is encountered, use NCUpdateResult.Failed
