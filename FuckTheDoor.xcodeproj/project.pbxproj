@@ -19,6 +19,7 @@
 		793FEAAF1B9AD302003CD04C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */; };
 		793FEAB21B9AD302003CD04C /* FuckDoorToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 793FEAA51B9AD302003CD04C /* FuckDoorToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		793FEAB81B9AD924003CD04C /* TDHTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */; };
+		79845A551BD0D9C00013525B /* ShakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79845A541BD0D9C00013525B /* ShakeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		799F7D921B9AFF8900DC1476 /* TDHTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */; };
 		EEF6AFDE2F094B73BA134EAB /* libPods-FuckDoorToday.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E48E5C3E64CD9DE8B048E /* libPods-FuckDoorToday.a */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		793FEAAE1B9AD302003CD04C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		793FEAB71B9AD924003CD04C /* TDHTTPRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHTTPRequestOperation.swift; sourceTree = "<group>"; };
 		793FEAB91B9ADA54003CD04C /* FuckDoorToday-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckDoorToday-Bridging-Header.h"; sourceTree = "<group>"; };
+		79845A541BD0D9C00013525B /* ShakeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeTableViewController.swift; sourceTree = "<group>"; };
 		799F7D881B9AFEF000DC1476 /* FuckTheDoor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckTheDoor-Bridging-Header.h"; sourceTree = "<group>"; };
 		799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHTTPRequestOperation.swift; sourceTree = "<group>"; };
 		DBB6A558CB3532802B4568D7 /* Pods-FuckTheDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckTheDoor.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuckTheDoor/Pods-FuckTheDoor.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				793FEA811B9AD2C5003CD04C /* AppDelegate.swift */,
 				799F7D911B9AFF8900DC1476 /* TDHTTPRequestOperation.swift */,
 				793FEA831B9AD2C5003CD04C /* ViewController.swift */,
+				79845A541BD0D9C00013525B /* ShakeTableViewController.swift */,
 				793FEA851B9AD2C5003CD04C /* Main.storyboard */,
 				793FEA881B9AD2C5003CD04C /* Images.xcassets */,
 				793FEA8A1B9AD2C5003CD04C /* LaunchScreen.xib */,
@@ -414,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79845A551BD0D9C00013525B /* ShakeTableViewController.swift in Sources */,
 				793FEA841B9AD2C5003CD04C /* ViewController.swift in Sources */,
 				799F7D921B9AFF8900DC1476 /* TDHTTPRequestOperation.swift in Sources */,
 				793FEA821B9AD2C5003CD04C /* AppDelegate.swift in Sources */,
