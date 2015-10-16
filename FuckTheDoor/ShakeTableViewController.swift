@@ -108,7 +108,7 @@ class ShakeTableViewController: UITableViewController,CLLocationManagerDelegate 
         let dict = ["latitude":nowLocation!.coordinate.latitude,"longtitude":nowLocation!.coordinate.longitude]
         
         NSUserDefaults.standardUserDefaults().setObject(dict, forKey: "\(door.doorDescription)Loction")
-                
+        
         switch door{
         case .Front:
 //            self.fontLabel.text = string
@@ -127,7 +127,7 @@ class ShakeTableViewController: UITableViewController,CLLocationManagerDelegate 
         if self.nowLocation == nil{
             return nil
         }
-        if self.frontLocation != nil || self.backLocation != nil || self.lobbyLabel != nil {
+        if self.frontLocation != nil || self.backLocation != nil || self.lobbyLocation != nil {
         
             var frontDistance = MAXFLOAT
             var backDistance = MAXFLOAT
@@ -169,7 +169,7 @@ class ShakeTableViewController: UITableViewController,CLLocationManagerDelegate 
                 return Door.Back
             }
             if lobbyDistance <= frontDistance && lobbyDistance <= backDistance{
-                return Door.Back
+                return Door.Lobby
             }
         }
         
