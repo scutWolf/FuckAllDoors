@@ -61,6 +61,7 @@ class ShakeTableViewController: UITableViewController,CLLocationManagerDelegate 
         self.locationManager.delegate = self
         
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.distanceFilter = 1000.0
         
         if self.locationManager.respondsToSelector("requestWhenInUseAuthorization"){
             
